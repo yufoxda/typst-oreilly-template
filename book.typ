@@ -378,3 +378,17 @@
 
   body
 }
+
+#let note(body) = {
+
+  set par(first-line-indent: 0em, leading: 0.4em, spacing: 0.4em,
+  )
+  box(inset: (x: 1em, y: 0.5em))[
+    #grid(
+      columns: (auto, 1fr),
+      gutter: 1em,
+      square(size: 25pt, stroke: 0.5pt),
+      body,
+    )
+  ]
+}
