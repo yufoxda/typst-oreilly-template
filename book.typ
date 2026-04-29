@@ -105,6 +105,14 @@
     first-line-indent: 1em,
   )
 
+  // リストのインデント、上下に空白
+  show list: it => {
+    block(inset: (left: 1em ,y:0.5em))[#it]
+  }
+  show enum: it => {
+    block(inset: (left: 1em ,y:0.5em))[#it]
+  }
+
   // 見出しのナンバリングとフォントを設定
   show heading: set text(font: fonts.sans-serif)
 
